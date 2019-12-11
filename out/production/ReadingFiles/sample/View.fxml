@@ -33,11 +33,11 @@
          <font>
             <Font name="Rockwell" size="17.0" />
          </font></ToggleButton>
-      <RadioButton fx:id="RadioButtonRus" layoutX="506.0" layoutY="310.0" mnemonicParsing="false" onAction="#RusSelected" prefHeight="32.0" prefWidth="80.0" text="Rus">
+      <RadioButton fx:id="RadioButtonRus" layoutX="506.0" layoutY="310.0" mnemonicParsing="false" onAction="#rusSelected" prefHeight="32.0" prefWidth="80.0" text="Rus">
          <toggleGroup>
             <ToggleGroup fx:id="RadioGroup" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="RadioButtonEng" layoutX="506.0" layoutY="354.0" mnemonicParsing="false" onAction="#EngSelected" prefHeight="32.0" prefWidth="80.0" selected="true" text="Eng" toggleGroup="$RadioGroup" />
+      <RadioButton fx:id="RadioButtonEng" layoutX="506.0" layoutY="354.0" mnemonicParsing="false" onAction="#engSelected" prefHeight="32.0" prefWidth="80.0" selected="true" text="Eng" toggleGroup="$RadioGroup" />
    </children>
 </AnchorPane>

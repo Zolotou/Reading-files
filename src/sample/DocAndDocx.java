@@ -37,15 +37,14 @@ public class DocAndDocx {
             extractor = new XWPFWordExtractor(doc);
         }
         // if xlsx
-        else if (filepath.toLowerCase().endsWith(".xlsx")){
+        else if (filepath.toLowerCase().endsWith(".xlsx")) {
             XSSFWorkbook myWorkBook = new XSSFWorkbook(streampath);
 
             XSSFExcelExtractor XLextractor = new XSSFExcelExtractor(myWorkBook);
 
             extractor = XLextractor;
             XLextractor.close();
-        }
-        else {
+        } else {
             POIFSFileSystem fileSystem = new POIFSFileSystem(path);
             extractor = ExtractorFactory.createExtractor(fileSystem);
         }
